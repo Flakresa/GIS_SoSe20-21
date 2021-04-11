@@ -3,32 +3,52 @@
 	<head>
 		<meta charset ="utf-8">
 		<title> Portfolio Flakresa</title>
+        <link rel="stylesheet" href="style.css">
 		
 	</head>
 	<body>
         <header>
             <nav>
-            <h1>Contact</h1>
-            
-            <p>Hier sind Möglichkeiten aufgelistet wie Sie mich kontaktieren können und auch all meine Social Media Profile</p>
+                <ul>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="About_Me.html">About_Me</a></li>
+                    <li><a class="active"href="Contact.html">Contact</a></li>
+                </ul>
         </nav>
         </header>
         
+
         <main>
-            <address>
-                Email Adresse <a href="mailto:flakresadukaj@outlook.de">Flakresa Dukaj</a>.<br> 
-                </address>
-                <p><var>Mein <a href="https://www.instagram.com/flakresaa/"> Instagram</a> Account</var></p>
-                <p><var>Mein <a href="https://accounts.snapchat.com/accounts/login"> Snapchat</a> Account</var></p>
+           
+              
+                <div class="header-text">
+                    <div>Kontakt</div>
+                    <div class="icon"><a href="https://www.instagram.com/flakresaa/"><img src="insta.png" alt=""></a></div>
+                </div>
 
-                <img src="1_P4a-jlzdIAmWrYllQOOkJw.png" alt="">
 
-                <p> Mein Facebook Profil hab ich vor kurzem gelöscht. 
-                    Und meinen Instagram Account habe ich gestern deaktiviert.
-                    Ein bisschen <mark>Pause</mark> muss auch manchmal sein.
-                <small>(Außerdem lent das eh alles vom lernen ab)</small>
-                </p>
-                <p><b>Falls ihr das erste Video nochmal sehen wollte dann klickt einfach hier </b></p> <q><a href="Portfolio.html" target="_blank">Portfolio</a></q>
+
+                <address>
+                    Email Adresse <a href="mailto:flakresadukaj@outlook.de">Flakresa Dukaj</a>.<br> 
+                    </address>
+                    <p><var>Mein <a href="https://www.instagram.com/flakresaa/"> Instagram</a> Account</var></p>
+                    <p><var>Mein <a href="https://accounts.snapchat.com/accounts/login"> Snapchat</a> Account</var></p>
+    
+                    <form class="formular">
+                    <h1>Kontaktformular</h1>
+                    <fieldset>
+                    <legend>Persönliche Daten</legend>
+                    <label for="name">Name</label>
+                    <input type="text" id="name"><br>
+                    <label for="e-mail">E-Mail</label>
+                    <input type="email" id="e-mail"><br>
+                    <label for="message">Nachricht</label>
+                    <input type="text" id="message"><br>
+                    <button id="button" type="submit">Senden</button>
+                    </fieldset>
+                    </form>
+                    
+
 </main> 
 </html>   
         
