@@ -4,8 +4,7 @@ h1{
 }
 
 
-
-.header-text{
+ .header-text{
   background:rgba(255, 72, 0, 0.856);
   height: auto;
   width:900px;
@@ -13,9 +12,10 @@ h1{
   position: fixed relative;
   font-size: 130pt;
   font-weight: bold;
-  color: white;
+  color:white;
   text-align: center;
 }
+
 
 .icon :hover:not(.active){
   border-color: white;
@@ -23,10 +23,10 @@ h1{
 
 .icon img{
   width: 50px;
-  border-color: black;
+  border-color: white;
   border-width: thin;
   border-style: solid;
-  border-width: 20px;
+  border-width: 10px;
 }
 
 body{
@@ -88,7 +88,7 @@ img {
 .formular{
     background: none;
     font-size: 20px;
-    color: grey;
+    color: orange;
     width: 400px;
     height: 400px;
     padding: 5px 5px 5px 5px;
@@ -159,4 +159,4 @@ td, th{
 td{
   text-align: center;
 }
-   
+
