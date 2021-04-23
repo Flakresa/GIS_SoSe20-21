@@ -49,10 +49,11 @@ h1{
     }
   }
 
-
+  main{
+    display:flex;
+    }
 
 body{
-  body{display:flex}
   position: relative;
   background-image: url(Hintergrund.png);
   font-family: Arial, sans-serif;
