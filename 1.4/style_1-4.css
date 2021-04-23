@@ -224,6 +224,28 @@ h1+p {
   height: auto;
   font-size: 100pt;
   background: rgba(255, 72, 0, 0.856);
+
+}
+@media only screen and (min-width: 1025px) {
+  h1{
+    color:rgb(236, 92, 34);
+  }
+  body{
+    width: 1025px;
+
+  img [alt=selfie]{
+    width: 25%;
+  }
+  .icon img{
+    width: 50px;
+  }
+  .header-text{
+  width:1000px;  
+  border-radius: 0px 0px 1500px 1500px;
+  height: auto;
+  font-size: 130pt;
+  background:rgb(236, 92, 34);;
+  }
 }
 
 }
