@@ -52,6 +52,7 @@ h1{
 
 
 body{
+  body{display:flex}
   position: relative;
   background-image: url(Hintergrund.png);
   font-family: Arial, sans-serif;
