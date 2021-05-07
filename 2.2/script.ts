@@ -8,7 +8,7 @@
  console.log(min(23, 45, 35, 96, 2, 47, 7, -4, 1));
  function min(..._num: number[]): number {
      let minimum: number = _num[0];
-     for (let i: number = 0; i < _num.length;){
+     for (let i: number = 0; i < _num.length; i++ ){
          if (_num[i] < minimum) {
              minimum = _num[i];
          }
@@ -46,7 +46,33 @@
     console.log(backwards(arr));
 
 
-    //Aufgabe 3
+//Aufgabe 2b)
+
+function join(_joinArrayA, _joinArrayB) {
+    let resultArray = [];
+    for (let i = 0; i < _joinArrayA.length; i++) {
+        resultArray.push(_joinArrayA[i]);
+    }
+    for (let j = 0; j < _joinArrayB.length; j++) {
+        resultArray.push(_joinArrayB[j]);
+    }
+    return resultArray;
+}
+console.log(join([0, 2, 5, 6], [4, 7, 1, 8]));
+
+
+
+//Aufgabe 2c)
+
+let index1 = 0;
+let index2 = 4;
+function split(_arr, _index1, _index2) {
+    return _arr.slice(_index1, _index2);
+}
+console.log(split(arr, index1, index2));
+
+
+//Aufgabe 3
 
     let canvas: HTMLCanvasElement = <HTMLCanvasElement>document.getElementById("Canvas");
     let context: CanvasRenderingContext2D = canvas.getContext("2d");
