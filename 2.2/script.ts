@@ -32,6 +32,23 @@
     }
     console.log(isEven(x));
 
+//Aufggabe 1c) 
+
+    class Student {
+        constructor(_sVorname, _sNachname, _sStudiengang, _sMatrikelnummer) {
+            this.sVorname = _sVorname;
+            this.sName = _sNachname;
+            this.sStudiengang = _sStudiengang;
+            this.sMatrikelnummer = _sMatrikelnummer;
+        }
+        showInfo() {
+            console.log("vollständiger Name: " + this.sVorname + " " + this.sName);
+            console.log("Der Studiengang: " + this.sStudiengang);
+            console.log("Matrikelnummer: " + this.sMatrikelnummer);
+        }
+    }
+    let sFlakresa = new Student("Flakresa", "Dukaj", "OMB", 0989);
+    sFlakresa.showInfo();
 
  //Aufgabe 2a)
 
@@ -48,17 +65,32 @@
 
 //Aufgabe 2b)
 
-function join(_joinArrayA, _joinArrayB) {
-    let resultArray = [];
-    for (let i = 0; i < _joinArrayA.length; i++) {
-        resultArray.push(_joinArrayA[i]);
+let arr = [5, 42, 17, 2018, -10, 60, -10010];
+    function backwards(_input) {
+        let arr = new Array;
+        for (let i = _input.length - 1; i >= 0; i--) {
+            arr.push(_input[i]);
+        }
+        return arr;
     }
-    for (let j = 0; j < _joinArrayB.length; j++) {
-        resultArray.push(_joinArrayB[j]);
+    console.log(backwards(arr));
+
+
+    class Student {
+    constructor(_sVorname, _sNachname, _sStudiengang, _sMatrikelnummer) {
+        this.sVorname = _sVorname;
+        this.sName = _sNachname;
+        this.sStudiengang = _sStudiengang;
+        this.sMatrikelnummer = _sMatrikelnummer;
     }
-    return resultArray;
+    showInfo() {
+        console.log("vollständiger Name: " + this.sVorname + " " + this.sName);
+        console.log("Der Studiengang: " + this.sStudiengang);
+        console.log("Matrikelnummer: " + this.sMatrikelnummer);
+    }
 }
-console.log(join([0, 2, 5, 6], [4, 7, 1, 8]));
+let sAnna = new Student("Anna", "Müller", "MKB", 1234);
+sAnna.showInfo();
 
 
 
