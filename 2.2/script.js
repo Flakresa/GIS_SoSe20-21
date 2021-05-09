@@ -1,1 +1,156 @@
-
+"use strict";
+//Aufgabe 1
+// "langweilige Konsolenausgaben"
+console.log("Aufgabe 1");
+//Aufgabe_1a)
+console.log("Aufgabe_1a)");
+console.log(min(23, 45, 35, 96, 2, 47, 7, -4, 1));
+function min(..._num) {
+    let minimum = _num[0];
+    for (let i = 0; i < _num.length; i++) {
+        if (_num[i] < minimum) {
+            minimum = _num[i];
+        }
+    }
+    return minimum;
+}
+//Aufgabe 1b)
+let x = 5;
+function isEven(_x) {
+    if (_x == 0) {
+        return true;
+    }
+    if (_x == 0) {
+        return false;
+    }
+    return isEven(_x - 2);
+}
+console.log(isEven(x));
+//Aufggabe 1c) 
+class Student {
+    constructor(_sVorname, _sNachname, _sStudiengang, _sMatrikelnummer) {
+        this.sVorname = _sVorname;
+        this.sName = _sNachname;
+        this.sStudiengang = _sStudiengang;
+        this.sMatrikelnummer = _sMatrikelnummer;
+    }
+    showInfo() {
+        console.log("vollständiger Name: " + this.sVorname + " " + this.sName);
+        console.log("Der Studiengang: " + this.sStudiengang);
+        console.log("Matrikelnummer: " + this.sMatrikelnummer);
+    }
+}
+let sFlakresa = new Student("Flakresa", "Dukaj", "OMB", 0989);
+sFlakresa.showInfo();
+//Aufgabe 2a)
+let arr = [5, 42, 17, 2018, -10, 60, -10010];
+function backwards(_input) {
+    let arr = new Array;
+    for (let i = _input.length - 1; i >= 0; i--) {
+        arr.push(_input[i]);
+    }
+    return arr;
+}
+console.log(backwards(arr));
+//Aufgabe 2b)
+let arr = [5, 42, 17, 2018, -10, 60, -10010];
+function backwards(_input) {
+    let arr = new Array;
+    for (let i = _input.length - 1; i >= 0; i--) {
+        arr.push(_input[i]);
+    }
+    return arr;
+}
+console.log(backwards(arr));
+class Student {
+    constructor(_sVorname, _sNachname, _sStudiengang, _sMatrikelnummer) {
+        this.sVorname = _sVorname;
+        this.sName = _sNachname;
+        this.sStudiengang = _sStudiengang;
+        this.sMatrikelnummer = _sMatrikelnummer;
+    }
+    showInfo() {
+        console.log("vollständiger Name: " + this.sVorname + " " + this.sName);
+        console.log("Der Studiengang: " + this.sStudiengang);
+        console.log("Matrikelnummer: " + this.sMatrikelnummer);
+    }
+}
+let sAnna = new Student("Anna", "Müller", "MKB", 1234);
+sAnna.showInfo();
+//Aufgabe 2c)
+let index1 = 0;
+let index2 = 4;
+function split(_arr, _index1, _index2) {
+    return _arr.slice(_index1, _index2);
+}
+console.log(split(arr, index1, index2));
+//Aufgabe 3
+let canvas = document.getElementById("Canvas");
+let context = canvas.getContext("2d");
+// heaven
+context.fillStyle = "blue";
+context.fillRect(0, 0, 600, 400);
+// cloud
+context.beginPath();
+context.moveTo(170, 80);
+context.bezierCurveTo(230, 100, 130, 150, 230, 150);
+context.bezierCurveTo(250, 180, 350, 180, 340, 150);
+context.bezierCurveTo(420, 150, 320, 120, 390, 100);
+context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+context.bezierCurveTo(320, 10, 250, 20, 250, 50);
+context.bezierCurveTo(200, 50, 150, 20, 170, 80);
+context.fillStyle = "lightgrey";
+context.fill();
+context.closePath();
+// tree
+context.fillStyle = "#8B5A2B";
+context.fillRect(190, 100, 70, 300);
+context.beginPath();
+context.fillStyle = "green";
+context.arc(200, 150, 75, 1, 6 * Math.PI, false);
+context.fill();
+context.closePath();
+// house
+context.fillStyle = "pink";
+context.fillRect(400, 170, 410, 200);
+context.beginPath();
+context.fillStyle = "orange";
+context.moveTo(390, 190);
+context.lineTo(730, 200);
+context.lineTo(600, 100);
+context.fill();
+context.closePath();
+class rechteck {
+    constructor() {
+        this.maxWidth = 600;
+        this.maxHeight = 300;
+        this.x1 = this.getRandomInt(0, this.maxWidth);
+        this.x2 = this.getRandomInt(this.x1, this.maxWidth);
+        this.y1 = this.getRandomInt(0, this.maxHeight);
+        this.y2 = this.getRandomInt(this.y1, this.maxHeight);
+    }
+    getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+    drawRect() {
+        context.beginPath();
+        context.fillStyle = "white";
+        context.strokeStyle = "black";
+        context.lineWidth = 5;
+        context.moveTo(this.x1, this.y1);
+        context.lineTo(this.x2, this.y1);
+        context.lineTo(this.x2, this.y2);
+        context.lineTo(this.x1, this.y2);
+        context.closePath();
+        context.stroke();
+        context.fill();
+        context.closePath();
+    }
+}
+let rechtArray = [new rechteck(), new rechteck(), new rechteck()];
+for (const recht of rechtArray) {
+    recht.drawRect();
+}
+//# sourceMappingURL=script.js.map
